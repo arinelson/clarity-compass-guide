@@ -227,4 +227,102 @@ export const getAllQuestions = (): QuestionData[] => [
     required: false,
     category: "personal"
   },
+  
+  // Novas Perguntas: Forças e Fraquezas
+  {
+    id: "learning_style",
+    question: "Como você prefere aprender coisas novas?",
+    type: "radio",
+    options: [
+      { value: "practice", label: "Fazendo na prática e experimentando", icon: "tool" },
+      { value: "theory", label: "Estudando a teoria antes de agir", icon: "book" },
+      { value: "observation", label: "Observando outras pessoas", icon: "eye" },
+      { value: "discussion", label: "Discutindo com outras pessoas", icon: "messageCircle" }
+    ],
+    required: false,
+    category: "strengths"
+  },
+  {
+    id: "feedback_handling",
+    question: "Como você lida com críticas ou feedback negativo?",
+    type: "radio",
+    options: [
+      { value: "defensive", label: "Tendo a me defender ou justificar" },
+      { value: "absorb", label: "Absorvo profundamente, às vezes demais" },
+      { value: "analytical", label: "Analiso com calma para extrair o útil" },
+      { value: "grateful", label: "Geralmente sou grato pela oportunidade de melhorar" }
+    ],
+    required: false,
+    category: "strengths"
+  },
+  {
+    id: "change_adaptation",
+    question: "Como você lida com mudanças inesperadas?",
+    type: "radio",
+    options: [
+      { value: "embrace", label: "Abraço e me adapto rapidamente", icon: "rocket" },
+      { value: "resist", label: "Tendo a resistir inicialmente", icon: "anchor" },
+      { value: "analyze", label: "Preciso entender completamente antes de aceitar", icon: "search" },
+      { value: "depends", label: "Depende do tipo de mudança" }
+    ],
+    required: false,
+    category: "behaviors"
+  },
+  
+  // Novas Perguntas: Metas e Aspirações
+  {
+    id: "future_vision",
+    question: "Você consegue visualizar claramente onde quer estar em 5 anos?",
+    type: "slider",
+    min: "Visão nebulosa",
+    max: "Visão muito clara",
+    required: false,
+    category: "goals"
+  },
+  {
+    id: "motivation_source",
+    question: "O que mais te motiva a tomar decisões importantes?",
+    type: "radio",
+    options: [
+      { value: "growth", label: "Crescimento e desenvolvimento pessoal" },
+      { value: "security", label: "Segurança e estabilidade" },
+      { value: "passion", label: "Paixão e realização" },
+      { value: "impact", label: "Impacto e contribuição para os outros" },
+      { value: "recognition", label: "Reconhecimento e sucesso" }
+    ],
+    required: false,
+    category: "goals"
+  },
+  {
+    id: "regret_avoidance",
+    question: "O quanto você se preocupa em evitar arrependimentos futuros?",
+    type: "slider",
+    min: "Pouco preocupado",
+    max: "Muito preocupado",
+    required: false,
+    category: "behaviors"
+  },
+  {
+    id: "perfectionism",
+    question: "Você tende a buscar a decisão perfeita ou uma que seja boa o suficiente?",
+    type: "slider",
+    min: "Boa o suficiente",
+    max: "Decisão perfeita",
+    required: false,
+    category: "behaviors"
+  },
+  {
+    id: "success_metrics",
+    question: "Como você define o sucesso de uma decisão?",
+    type: "multiselect",
+    options: [
+      { value: "happiness", label: "Me deixou mais feliz" },
+      { value: "growth", label: "Resultou em crescimento" },
+      { value: "peace", label: "Trouxe paz de espírito" },
+      { value: "achievement", label: "Alcançou resultados concretos" },
+      { value: "relationships", label: "Melhorou relacionamentos importantes" }
+    ],
+    required: false,
+    category: "goals"
+  }
 ];

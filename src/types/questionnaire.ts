@@ -9,11 +9,11 @@ export interface QuestionData {
   id: string;
   question: string;
   description?: string;
-  type: 'text' | 'textarea' | 'radio' | 'slider' | 'checkbox';
+  type: 'text' | 'textarea' | 'radio' | 'slider' | 'checkbox' | 'multiselect' | 'rating';
   options?: QuestionOption[];
   placeholder?: string;
   required: boolean;
-  category: 'context' | 'priorities' | 'behaviors' | 'emotional' | 'personal';
+  category: 'context' | 'priorities' | 'behaviors' | 'emotional' | 'personal' | 'strengths' | 'goals';
   min?: string;
   max?: string;
 }
